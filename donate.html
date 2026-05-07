@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate</title>
+    <link rel="stylesheet" href="CSS/donate.css">
+</head>
+<body>
+
+    <div class="donate-container">
+        <div class="donate-card">
+
+            <h2>Support Your Alumni Community</h2>
+            <p class="subtitle">
+                Contribute to scholarships, student welfare, events, and campus development.
+            </p>
+
+            <form id="donationForm">
+
+                <div class="input-box">
+                    <label>Donor Name</label>
+                    <input type="text" id="donorName" placeholder="Your name" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Donation Amount (₹)</label>
+                    <input type="number" id="amount" placeholder="e.g. 5000" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Purpose</label>
+                    <input type="text" id="purpose" placeholder="Scholarship / Events / Welfare" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Message</label>
+                    <textarea id="message" placeholder="Optional message..."></textarea>
+                </div>
+
+                <button type="submit">Donate Now</button>
+
+                <div class="back-link">
+                    <a href="dashboard.html">← Back to Dashboard</a>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+    <script src="js/donate.js"></script>
+</body>
+</html>

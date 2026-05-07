@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs Portal</title>
+    <link rel="stylesheet" href="CSS/jobs.css">
+</head>
+<body>
+
+    <div class="jobs-page">
+
+        <!-- Header -->
+        <div class="top-bar">
+            <h1>Alumni Jobs Portal</h1>
+
+            <div class="top-buttons">
+                <button onclick="window.location.href='post-job.html'">
+                    Post Job
+                </button>
+
+                <button onclick="window.location.href='dashboard.html'">
+                    Dashboard
+                </button>
+            </div>
+        </div>
+
+        <!-- Search -->
+        <div class="search-box">
+            <input 
+                type="text" 
+                id="searchInput"
+                placeholder="Search jobs by title, company, or location..."
+            >
+        </div>
+
+        <!-- Jobs Container -->
+        <div id="jobsContainer" class="jobs-grid">
+            <p class="loading">Loading jobs...</p>
+        </div>
+
+    </div>
+
+    <script src="js/jobs.js"></script>
+</body>
+</html>

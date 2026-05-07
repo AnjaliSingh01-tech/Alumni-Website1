@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile - Alumni Portal</title>
+    <link rel="stylesheet" href="CSS/edit_profile.css">
+</head>
+<body>
+
+    <div class="edit-container">
+        <div class="edit-card">
+
+            <div class="profile-icon">A</div>
+
+            <h2>Edit Your Profile</h2>
+            <p class="subtitle">
+                Complete your alumni profile to build your professional presence.
+            </p>
+
+            <form id="editProfileForm">
+
+                <div class="input-box">
+                    <label for="graduationYear">Graduation Year</label>
+                    <input type="text" id="graduationYear" placeholder="e.g. 2025">
+                </div>
+
+                <div class="input-box">
+                    <label for="course">Course</label>
+                    <input type="text" id="course" placeholder="e.g. BCA">
+                </div>
+
+                <div class="input-box">
+                    <label for="college">College</label>
+                    <input type="text" id="college" placeholder="Enter college name">
+                </div>
+
+                <div class="input-box">
+                    <label for="linkedin">LinkedIn Profile</label>
+                    <input type="text" id="linkedin" placeholder="LinkedIn URL">
+                </div>
+
+                <div class="input-box">
+                    <label for="skills">Skills</label>
+                    <input type="text" id="skills" placeholder="e.g. HTML, CSS, JS">
+                </div>
+
+                <div class="input-box">
+                    <label for="bio">Bio</label>
+                    <textarea id="bio" placeholder="Tell us about yourself"></textarea>
+                </div>
+
+                <button type="submit">Save Profile</button>
+
+                <div class="back-link">
+                    <a href="dashboard.html">← Back to Dashboard</a>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+    <script src="js/edit_profile.js"></script>
+</body>
+</html>

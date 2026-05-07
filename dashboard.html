@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alumni Dashboard</title>
+  <link rel="stylesheet" href="CSS/dashboard.css">
+</head>
+
+<body>
+
+  <div class="dashboard-container">
+    <h1>Welcome to Alumni Dashboard</h1>
+
+    <div class="profile-card">
+      <h2>Your Profile</h2>
+
+      <p><strong>Name:</strong> <span id="userName">Loading...</span></p>
+
+      <p><strong>Email:</strong> <span id="userEmail">Loading...</span></p>
+      <p><strong>Graduation Year:</strong> <span id="graduationYear">Loading...</span></p>
+      <p><strong>Course:</strong> <span id="course">Loading...</span></p>
+      <p><strong>College:</strong> <span id="college">Loading...</span></p>
+      <p><strong>LinkedIn:</strong> <span id="linkedin">Loading...</span></p>
+      <p><strong>Skills:</strong> <span id="skills">Loading...</span></p>
+      <p><strong>Bio:</strong> <span id="bio">Loading...</span></p>
+
+      <button onclick="window.location.href='edit-profile.html'">
+    Edit Profile
+</button>
+
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <script src="js/dashboard.js"></script>
+</body>
+
+</html>

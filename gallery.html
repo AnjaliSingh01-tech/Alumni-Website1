@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="CSS/gallery.css">
+</head>
+<body>
+
+    <div class="gallery-page">
+
+        <!-- Header -->
+        <div class="top-bar">
+            <h1>Campus & Alumni Gallery</h1>
+
+            <div class="top-buttons">
+                <button onclick="window.location.href='post-gallery.html'">
+                    Add Memory
+                </button>
+
+                <button onclick="window.location.href='dashboard.html'">
+                    Dashboard
+                </button>
+            </div>
+        </div>
+
+        <!-- Search -->
+        <div class="search-box">
+            <input 
+                type="text" 
+                id="searchInput"
+                placeholder="Search by title or category..."
+            >
+        </div>
+
+        <!-- Gallery Grid -->
+        <div id="galleryContainer" class="gallery-grid">
+            <p class="loading">Loading gallery...</p>
+        </div>
+
+    </div>
+
+    <script src="js/gallery.js"></script>
+</body>
+</html>

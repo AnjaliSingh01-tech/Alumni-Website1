@@ -1,0 +1,626 @@
+/* -------------------------
+   GLOBAL SETTINGS
+---------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f4f6fa;
+    color: #222;
+}
+
+/* -------------------------
+   HEADER
+---------------------------*/
+.header {
+    width: 100%;
+    background: #222e46;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.header h1 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+ .btn {
+    background: #ffd700;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    margin-left: 10px;
+    transition: .3s ease;
+   
+}
+.btn a{
+    text-decoration: none;
+    color: #222;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background: #fff;
+}
+
+.btn-outline a{
+    background: transparent;
+    border: 2px solid #ffd700;
+    color: white;
+}
+
+.btn-outline:hover a {
+    background: #ffd700;
+    color: #222;
+}
+
+/* -------------------------
+   NAVIGATION MENU
+---------------------------*/
+.navbar {
+    background: #1b2436;
+    padding: 12px 0;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.navbar ul li a:hover {
+    color: #ffd700;
+}
+
+/* -------------------------
+   BANNER SLIDER
+---------------------------*/
+.banner-section {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.banner-slider {
+    width: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+}
+
+.banner-slider img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0% {transform: translateX(0);}
+    20% {transform: translateX(-100%);}
+    40% {transform: translateX(-200%);}
+    60% {transform: translateX(-300%);}
+    80% {transform: translateX(-400%);}
+    100% {transform: translateX(0);}
+}
+
+/* -------------------------
+   SECTION HEADINGS
+---------------------------*/
+h2 {
+    text-align: center;
+    font-size: 28px;
+    padding: 20px 0 5px;
+    color: #222e46;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* -------------------------
+   VISION & MISSION
+---------------------------*/
+.vision-mission,
+.overview {
+    width: 85%;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+
+.vision-mission p,
+.overview p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+/* -------------------------
+   OVERVIEW IMAGE
+---------------------------*/
+.overview-img {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+    object-fit: cover;
+    height: 350px;
+}
+
+/* ALUMNI WELCOME SECTION */
+.alumni-welcome {
+   width: 85%;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+    text-align: center;
+ 
+}
+
+.alumni-photos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.alumni-card {
+  text-align: center;
+}
+
+.alumni-card img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 3px solid white;
+  box-shadow: 0 0 10px rgba(255,255,255,0.4);
+  transition: 0.3s;
+}
+
+.alumni-card img:hover {
+  transform: scale(1.05);
+}
+
+.alumni-card h3 {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #092c78;
+}
+
+/* DIRECTOR TEAM */
+.director-team {
+   width: 85%;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+  text-align: center;
+ 
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.team-card {
+  background: #ffffff22;
+  padding: 20px;
+  width: 260px;
+  border-radius: 15px;
+  border: 2px solid #ffffff55;
+  text-align: center;
+  backdrop-filter: blur(5px);
+  transition: 0.3s;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.team-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid white;
+  object-fit: cover;
+}
+
+.team-card h3 {
+  margin-top: 12px;
+  color: #092c78;
+}
+
+.team-card p {
+  font-size: 14px;
+}
+/* BLOG SECTION */
+.blog-section {
+    padding: 40px;
+    background: #f5f7fb;
+}
+
+.blog-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c2c2c;
+}
+
+.blog-form {
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.blog-form input,
+.blog-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.blog-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.blog-form button {
+    background: #2f3e9e;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.blog-form button:hover {
+    background: #1f2b70;
+}
+
+/* BLOG POSTS */
+.blog-posts {
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.blog-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.blog-card h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.blog-card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+
+/* -------------------------
+   QUICK LINKS SECTION
+---------------------------*/
+/* .quick-links {
+    width: 85%;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+   
+   
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background: #222e46;
+    color: white;
+    text-decoration: none;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 600;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.card:hover {
+    background: #ffd700;
+    color: #222;
+    transform: translateY(-5px);
+} */
+
+/* -------------------------
+   FOOTER
+---------------------------*/
+.footer {
+    background: #1b2436;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 15px;
+}
+
+.footer p {
+    margin: 3px 0;
+}
+
+
+/* -------------------------
+   RESPONSIVE DESIGN
+---------------------------*/
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .banner-slider img {
+        height: 260px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+}
+
+/* =========================
+   WELCOME ALUMNI SECTION
+========================= */
+.welcome-alumni-section {
+    background: white;
+    margin: 30px auto;
+    padding: 50px 30px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 1500px;
+}
+
+.welcome-alumni-section h2 {
+    font-size: 30px;
+    color: #1b2436;
+    margin-bottom: 35px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.welcome-alumni-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.welcome-alumni-card {
+    width: 220px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.welcome-alumni-card:hover {
+    transform: translateY(-8px);
+}
+
+.welcome-alumni-card img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ffd700;
+    margin-bottom: 15px;
+}
+
+.welcome-alumni-card h3 {
+    color: #002b7f;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.welcome-alumni-card p {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.loading {
+    font-size: 20px;
+    color: #444;
+}
+
+/* =========================
+   MEDIA GALLERY SECTION
+========================= */
+.media-gallery {
+    background: white;
+    margin: 40px auto;
+    padding: 50px 30px;
+    border-radius: 20px;
+    max-width: 1500px;
+    text-align: center;
+}
+
+.video-gallery h2,
+.photo-gallery h2 {
+    font-size: 44px;
+    color: #1b2436;
+    margin-bottom: 30px;
+    font-weight: 800;
+}
+
+/* VIDEO GRID */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    margin-bottom: 60px;
+}
+
+.video-grid iframe {
+    width: 100%;
+    height: 220px;
+    border-radius: 15px;
+    border: none;
+}
+
+/* PHOTO GRID */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 25px;
+    justify-items: center;
+}
+
+/* PHOTO CARD */
+.homepage-photo-card {
+    background: #f8f8f8;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    transition: 0.3s;
+}
+
+.homepage-photo-card:hover {
+    transform: translateY(-5px);
+}
+
+.homepage-photo-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+}
+
+.homepage-photo-card p {
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #1b2436;
+}
+
+/* BUTTON */
+.gallery-btn {
+    margin-top: 30px;
+}
+
+.gallery-btn a {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #ffd700;
+    color: #222;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+/* QUICK LINK CARD LINKS */
+/* -------------------------
+   QUICK LINKS SECTION
+---------------------------*/
+.quick-links {
+    width: auto;
+    margin: 30px auto;
+    background: white;
+    padding: 40px 25px;
+    border-radius: 16px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 28px;
+    margin-top: 25px;
+}
+
+/* CARD LINK STYLE */
+.cards .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 95px;
+    padding: 20px;
+
+    background: #1f2d4d;
+    color: white !important;
+
+    text-decoration: none !important;
+
+    border-radius: 16px;
+
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+
+    transition: all 0.3s ease;
+}
+.cards .card a {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.cards .card:hover {
+    background: #ffd700;
+    color: #1b2436 !important;
+    transform: translateY(-5px);
+}

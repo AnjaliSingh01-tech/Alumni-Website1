@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Events</title>
+    <link rel="stylesheet" href="CSS/events.css">
+</head>
+<body>
+
+    <div class="events-page">
+
+        <!-- Header -->
+        <div class="top-bar">
+            <h1>Alumni Events & Meetups</h1>
+
+            <div class="top-buttons">
+                <button onclick="window.location.href='post-event.html'">
+                    Post Event
+                </button>
+
+                <button onclick="window.location.href='dashboard.html'">
+                    Dashboard
+                </button>
+            </div>
+        </div>
+
+        <!-- Search -->
+        <div class="search-box">
+            <input 
+                type="text" 
+                id="searchInput"
+                placeholder="Search events by title, organizer, or location..."
+            >
+        </div>
+
+        <!-- Events Container -->
+        <div id="eventsContainer" class="events-grid">
+            <p class="loading">Loading events...</p>
+        </div>
+
+    </div>
+
+    <script src="js/events.js"></script>
+</body>
+</html>

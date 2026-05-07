@@ -1,0 +1,170 @@
+/* ---------------- GLOBAL ---------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1b2436, #222e46, #0f2027);
+    padding: 20px;
+}
+
+/* ---------------- LOGIN CARD ---------------- */
+.login-container {
+    width: 420px;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 45px 35px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* ---------------- TOP ICON ---------------- */
+.login-icon {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 18px;
+    background: linear-gradient(to right, #ffd700, #ffcc00);
+    color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+    border-radius: 50%;
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.35);
+}
+
+/* ---------------- HEADING ---------------- */
+.login-container h2 {
+    color: #222e46;
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+/* ---------------- SUBTITLE ---------------- */
+.login-container .subtitle {
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 28px;
+    line-height: 1.5;
+}
+
+/* ---------------- INPUT BOX ---------------- */
+.input-box {
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+.input-box label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 14px;
+    border: 1.5px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 15px;
+    background: #f9fafb;
+    transition: all 0.3s ease;
+}
+
+.input-box input:focus {
+    outline: none;
+    border-color: #ffd700;
+    background: #fff;
+    box-shadow: 0 0 8px rgba(255, 215, 0, 0.25);
+}
+
+/* ---------------- LOGIN BUTTON ---------------- */
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right, #ffd700, #ffcc00);
+    color: #222;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(255, 215, 0, 0.35);
+}
+
+/* ---------------- SIGNUP LINK ---------------- */
+.signup-link {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.signup-link a {
+    color: #1b2436;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* ---------------- ERROR MESSAGE ---------------- */
+.error {
+    color: #e63946;
+    font-size: 13px;
+    margin-top: 5px;
+    display: none;
+}
+
+/* ---------------- GENERAL MESSAGE ---------------- */
+#message {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #e63946;
+}
+
+/* ---------------- ANIMATION ---------------- */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (max-width: 500px) {
+    .login-container {
+        width: 100%;
+        padding: 35px 22px;
+    }
+
+    .login-container h2 {
+        font-size: 25px;
+    }
+
+    .login-container .subtitle {
+        font-size: 14px;
+    }
+}

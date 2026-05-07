@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Stories</title>
+    <link rel="stylesheet" href="CSS/success-stories.css">
+</head>
+<body>
+
+    <div class="stories-page">
+
+        <!-- Header -->
+        <div class="top-bar">
+            <h1>Alumni Success Stories</h1>
+
+            <div class="top-buttons">
+                <button onclick="window.location.href='post-story.html'">
+                    Share Story
+                </button>
+
+                <button onclick="window.location.href='dashboard.html'">
+                    Dashboard
+                </button>
+            </div>
+        </div>
+
+        <!-- Search -->
+        <div class="search-box">
+            <input 
+                type="text" 
+                id="searchInput"
+                placeholder="Search by alumni name, company, or course..."
+            >
+        </div>
+
+        <!-- Stories Container -->
+        <div id="storiesContainer" class="stories-grid">
+            <p class="loading">Loading success stories...</p>
+        </div>
+
+    </div>
+
+    <script src="js/success-stories.js"></script>
+</body>
+</html>

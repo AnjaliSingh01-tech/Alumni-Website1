@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Success Story</title>
+    <link rel="stylesheet" href="CSS/post-story.css">
+</head>
+<body>
+
+    <div class="story-container">
+        <div class="story-card">
+
+            <h2>Share Your Success Story</h2>
+            <p class="subtitle">
+                Inspire students and alumni by sharing your achievements and journey.
+            </p>
+
+            <form id="storyForm">
+
+                <div class="input-box">
+                    <label>Alumni Name</label>
+                    <input type="text" id="alumniName" placeholder="Your full name" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Graduation Year</label>
+                    <input type="text" id="graduationYear" placeholder="e.g. 2025">
+                </div>
+
+                <div class="input-box">
+                    <label>Course</label>
+                    <input type="text" id="course" placeholder="e.g. BCA">
+                </div>
+
+                <div class="input-box">
+                    <label>Current Company</label>
+                    <input type="text" id="company" placeholder="e.g. Google" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Job Role</label>
+                    <input type="text" id="jobRole" placeholder="e.g. Frontend Developer" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Achievement / Story</label>
+                    <textarea id="achievement" placeholder="Share your journey..." required></textarea>
+                </div>
+
+                <div class="input-box">
+                    <label>Profile Photo URL</label>
+                    <input type="text" id="profilePhoto" placeholder="https://...">
+                </div>
+
+                <div class="input-box">
+                    <label>LinkedIn URL</label>
+                    <input type="text" id="linkedin" placeholder="https://...">
+                </div>
+
+                <button type="submit">Post Story</button>
+
+                <div class="back-link">
+                    <a href="dashboard.html">← Back to Dashboard</a>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+    <script src="js/post-story.js"></script>
+</body>
+</html>

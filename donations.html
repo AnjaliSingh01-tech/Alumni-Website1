@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donations & Support</title>
+    <link rel="stylesheet" href="CSS/donations.css">
+</head>
+<body>
+
+    <div class="donations-page">
+
+        <!-- Header -->
+        <div class="top-bar">
+            <h1>Alumni Donations & Support</h1>
+
+            <div class="top-buttons">
+                <button onclick="window.location.href='donate.html'">
+                    Donate
+                </button>
+
+                <button onclick="window.location.href='dashboard.html'">
+                    Dashboard
+                </button>
+            </div>
+        </div>
+
+        <!-- Search -->
+        <div class="search-box">
+            <input 
+                type="text" 
+                id="searchInput"
+                placeholder="Search by donor or purpose..."
+            >
+        </div>
+
+        <!-- Donations Grid -->
+        <div id="donationsContainer" class="donations-grid">
+            <p class="loading">Loading donations...</p>
+        </div>
+
+    </div>
+
+    <script src="js/donations.js"></script>
+</body>
+</html>

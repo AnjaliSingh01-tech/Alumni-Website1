@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DMPGC Alumni Portal</title>
+    <link rel="shortcut icon" href="photo/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+   
+</head>
+
+<body>
+    <!-- HEADER SECTION -->
+    <header class="header">
+        <div class="logo-section">
+            <img src="photo/download.jpg" alt="College Logo" class="logo">
+            <h1>Dhirendra Mahila P.G. College – Alumni Portal</h1>
+        </div>
+
+        <div class="auth-buttons">
+            <button class="btn "><a href="login.html">Login</a></button>
+            <button class="btn "><a href="signup.html" >Register</a></button>
+        </div>
+    </header>
+
+    <!-- NAVIGATION MENU -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="jobs.html">Jobs & Internships</a></li>
+            <li><a href="success-stories.html">Success Stories</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="notices.html">Notices</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- BANNER SLIDER SECTION -->
+    <section class="banner-section">
+        <div class="banner-slider">
+            <img src="photo/BANNER PHT.jpg" alt="">
+            <img src="photo/BANNER PHT (3).jpg" alt="">
+            <img src="photo/BANNER PHT (1).jpg" alt="">
+            <img src="photo/BANNER PHT (2).jpg" alt="">
+        </div>
+    </section>
+
+    <!-- VISION & MISSION SECTION -->
+    <section class="vision-mission">
+        <h2>Vision & Mission</h2>
+        <p>
+            The Alumni Association aims to build a vibrant, connected, and engaged community that contributes
+            to the academic, professional, and social growth of the institution. It strives to strengthen 
+            lifelong relationships between alumni and the college by creating meaningful opportunities for 
+            interaction, mentorship, knowledge sharing, and career development.
+        </p>
+        <p>
+            Through active participation in institutional progress and networking initiatives, the association 
+            seeks to support alumni achievements while contributing to the holistic development of both the 
+            alumni community and the institution.
+        </p>
+    </section>
+
+    <!-- OVERVIEW SECTION -->
+    <section class="overview">
+        <h2>Overview</h2>
+        <p>
+            The college website serves as the official digital platform of the institution, providing 
+            comprehensive information to students, parents, faculty, alumni, and visitors. It showcases 
+            academic programs, admission procedures, facilities, achievements, and important announcements.
+        </p>
+        <p>
+            Designed for transparency and accessibility, the website supports online services such as 
+            admissions, fee payment, study materials, and grievance submission. It reflects the college’s 
+            commitment to quality education, communication, and digital growth.
+        </p>
+
+        <img src="photo/WhatsApp Image 2025-11-23 at 11.42.41 PM.jpeg" class="overview-img" alt="">
+    </section>
+      <!-- WELCOME TO ALUMNI PORTAL SECTION -->
+    <section class="welcome-alumni-section">
+    <h2>WELCOME TO ALUMNI PORTAL</h2>
+
+    <div id="welcomeAlumniContainer" class="welcome-alumni-grid">
+        <p class="loading">Loading alumni...</p>
+    </div>
+</section>
+    <!-- ALUMNI DIRECTOR TEAM SECTION -->
+    <section class="director-team">
+        <h2>Alumni Director Team</h2>
+
+        <div class="team-container">
+
+            <div class="team-card">
+                <img src="photo/staff1.jpg" alt="Director 1">
+                <h3>Mrs. Pooja Yadav</h3>
+                <p>Head – Alumni Relations</p>
+            </div>
+
+            <div class="team-card">
+                <img src="photo/staff2.jpg" alt="Director 2">
+                <h3>Prof. Pankaj Shrivastav</h3>
+                <p>Coordinator – Outreach Programs</p>
+            </div>
+
+            <div class="team-card">
+                <img src="photo/staff3.jpg" alt="Director 3">
+                <h3>Dr. Shalini Singh</h3>
+                <p>Mentorship & Training Lead</p>
+            </div>
+
+        </div>
+    </section>
+    <!-- ONLINE BLOG SECTION -->
+<section class="blog-section" id="blog-section">
+    <h2>Alumni Blog</h2>
+
+    <div class="blog-form">
+        <input type="text" id="authorName" placeholder="Author Name">
+        <input type="text" id="blogTitle" placeholder="Enter Blog Title">
+        <textarea id="blogContent" placeholder="Write your blog here..."></textarea>
+        <button onclick="postBlog()">Post Blog</button>
+    </div>
+
+    <div id="blogPosts" class="blog-posts"></div>
+</section>
+
+
+    <!-- QUICK LINKS SECTION -->
+    <section class="quick-links">
+        <h2>Quick Links</h2>
+        <div class="cards">
+            <div class="card"><a href="signup.html">Alumni Registration</a></div>
+            <div class="card"><a href="events.html">Upcoming Events</a></div>
+            <div class="card"><a href="#blog-section">Alumni Blog & Guidance</a></div>
+            <div class="card"><a href="alumni.html">Your Batchmates</a></div>
+            <div class="card"><a href="jobs.html">Career Support</a></div>
+            <div class="card"><a href="alumni.html">Alumni Directory</a></div>
+            <div class="card"><a href="donations.html">Donate / Support</a></div>
+        </div>
+    </section>
+    <!-- GALLERY -->
+    <!-- =========================
+     VIDEO + PHOTO GALLERY
+========================= -->
+<section class="media-gallery">
+
+    <!-- VIDEO GALLERY -->
+    <div class="video-gallery">
+        <h2>VIDEO GALLERY</h2>
+
+        <div class="video-grid">
+
+            <iframe 
+                src="https://www.youtube.com/embed/JcsyK3gUkcY" 
+                title="College Video 1"
+                allowfullscreen>
+            </iframe>
+
+            <iframe 
+                src="https://www.youtube.com/embed/veUA7G2vZyM" 
+                title="College Video 2"
+                allowfullscreen>
+            </iframe>
+
+            <iframe 
+                src="https://www.youtube.com/embed/txYgGmLvoy4" 
+                title="College Video 3"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+    </div>
+
+
+    <!-- PHOTO GALLERY -->
+    <div class="photo-gallery">
+        <h2>PHOTO GALLERY</h2>
+
+        <div id="homepageGalleryContainer" class="photo-grid">
+            <p class="loading">Loading gallery...</p>
+        </div>
+
+        <div class="gallery-btn">
+            <a href="gallery.html">View Full Gallery</a>
+        </div>
+    </div>
+
+</section>
+    <!-- FOOTER -->
+   <footer class="footer" id="contact">
+        <div class="footer-container">
+
+            <div>
+                <h2 class="footer">Contact Info :-</h2>
+
+                <p><i class="fa-solid fa-location-dot"></i> 
+                    Sundarpur, Near Pani Tanki, Varanasi, UP 221005
+                </p>
+
+                <p><i class="fa-solid fa-envelope"></i> 
+                    dmmvcollege@gmail.com
+                </p>
+
+                <p><i class="fa-solid fa-phone"></i> 
+                    7275154505 , 05422575787
+                </p>
+
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <div class="copyright">
+        © 2025 DMPGC – All Rights Reserved
+    </div>
+
+</body>
+<script>
+// =========================
+// REAL BLOG + WELCOME ALUMNI + HOMEPAGE GALLERY
+// =========================
+document.addEventListener("DOMContentLoaded", async () => {
+
+    // =========================
+    // DYNAMIC WELCOME ALUMNI
+    // =========================
+    const welcomeContainer = document.getElementById("welcomeAlumniContainer");
+
+    if (welcomeContainer) {
+        try {
+            const response = await fetch("http://localhost:5000/api/success-stories");
+            const data = await response.json();
+
+            if (!data.success || !data.stories.length) {
+                welcomeContainer.innerHTML = "<p>No alumni found yet.</p>";
+            } else {
+                const topAlumni = data.stories.slice(0, 4);
+
+                welcomeContainer.innerHTML = topAlumni.map(alumni => `
+                    <div class="welcome-alumni-card">
+
+                        <img 
+                            src="${alumni.profile_photo || 'https://via.placeholder.com/140'}" 
+                            alt="${alumni.alumni_name}"
+                        >
+
+                        <h3>${alumni.alumni_name}</h3>
+
+                        <p><strong>${alumni.company}</strong></p>
+
+                        <p>${alumni.job_role}</p>
+
+                    </div>
+                `).join("");
+            }
+
+        } catch (error) {
+            console.error("Welcome Alumni Error:", error);
+            welcomeContainer.innerHTML = "<p>Failed to load alumni.</p>";
+        }
+    }
+
+
+    // =========================
+    // HOMEPAGE PHOTO GALLERY
+    // =========================
+    const homepageGalleryContainer = document.getElementById("homepageGalleryContainer");
+
+    if (homepageGalleryContainer) {
+        try {
+            const galleryResponse = await fetch("http://localhost:5000/api/gallery");
+            const galleryData = await galleryResponse.json();
+
+            if (!galleryData.success || !galleryData.gallery.length) {
+                homepageGalleryContainer.innerHTML = "<p>No gallery images yet.</p>";
+            } else {
+                const latestPhotos = galleryData.gallery.slice(0, 4);
+
+                homepageGalleryContainer.innerHTML = latestPhotos.map(photo => `
+                    <div class="homepage-photo-card">
+                        <img 
+                            src="${photo.image_url}" 
+                            alt="${photo.title}"
+                        >
+                        <p>${photo.title}</p>
+                    </div>
+                `).join("");
+            }
+
+        } catch (error) {
+            console.error("Homepage Gallery Error:", error);
+            homepageGalleryContainer.innerHTML = "<p>Failed to load gallery.</p>";
+        }
+    }
+
+
+    // =========================
+    // LOAD BLOGS ON PAGE LOAD
+    // =========================
+    displayBlogs();
+});
+
+
+// =========================
+// POST BLOG
+// =========================
+async function postBlog() {
+    const token = localStorage.getItem("token");
+
+    if (!token) {
+        alert("Please login first.");
+        window.location.href = "login.html";
+        return;
+    }
+
+    const author = document.getElementById("authorName").value.trim();
+    const title = document.getElementById("blogTitle").value.trim();
+    const content = document.getElementById("blogContent").value.trim();
+
+    if (!author || !title || !content) {
+        alert("All fields are required!");
+        return;
+    }
+
+    try {
+        const response = await fetch("http://localhost:5000/api/blogs/post", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization": `Bearer ${token}`
+            },
+            body: JSON.stringify({
+                author_name: author,
+                title,
+                content
+            })
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+            alert("Blog posted successfully!");
+
+            document.getElementById("authorName").value = "";
+            document.getElementById("blogTitle").value = "";
+            document.getElementById("blogContent").value = "";
+
+            displayBlogs();
+
+        } else {
+            alert(data.message || "Blog posting failed");
+        }
+
+    } catch (error) {
+        console.error("Blog Post Error:", error);
+        alert("Server error. Please try again.");
+    }
+}
+
+
+// =========================
+// DISPLAY BLOGS
+// =========================
+async function displayBlogs() {
+    const blogPosts = document.getElementById("blogPosts");
+
+    if (!blogPosts) return;
+
+    try {
+        const response = await fetch("http://localhost:5000/api/blogs");
+        const data = await response.json();
+
+        if (!data.success || !data.blogs.length) {
+            blogPosts.innerHTML = "<p>No blogs posted yet.</p>";
+            return;
+        }
+
+        blogPosts.innerHTML = data.blogs.map(blog => `
+            <div class="blog-card">
+                <h3>${blog.title}</h3>
+
+                <div class="blog-meta">
+                    By <b>${blog.author_name}</b> | 
+                    ${new Date(blog.created_at).toLocaleString()}
+                </div>
+
+                <p>${blog.content}</p>
+
+                <div class="blog-actions">
+                    <button onclick="deleteBlog(${blog.id})">Delete</button>
+                </div>
+            </div>
+        `).join("");
+
+    } catch (error) {
+        console.error("Blogs Fetch Error:", error);
+        blogPosts.innerHTML = "<p>Failed to load blogs.</p>";
+    }
+}
+
+
+// =========================
+// DELETE BLOG
+// =========================
+async function deleteBlog(blogId) {
+    const token = localStorage.getItem("token");
+
+    if (!token) {
+        alert("Please login first.");
+        return;
+    }
+
+    try {
+        const response = await fetch(`http://localhost:5000/api/blogs/delete/${blogId}`, {
+            method: "DELETE",
+            headers: {
+                "Authorization": `Bearer ${token}`
+            }
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+            alert("Blog deleted successfully!");
+            displayBlogs();
+        } else {
+            alert(data.message || "Delete failed");
+        }
+
+    } catch (error) {
+        console.error("Blog Delete Error:", error);
+        alert("Server error.");
+    }
+}
+
+
+</script>
+</html>

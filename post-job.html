@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post a Job</title>
+    <link rel="stylesheet" href="CSS/post-job.css">
+</head>
+<body>
+
+    <div class="job-container">
+        <div class="job-card">
+
+            <h2>Post a Job Opportunity</h2>
+            <p class="subtitle">
+                Help alumni and students by sharing jobs, internships, or mentorship roles.
+            </p>
+
+            <form id="jobForm">
+
+                <div class="input-box">
+                    <label>Job Title</label>
+                    <input type="text" id="title" placeholder="e.g. Frontend Developer" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Company Name</label>
+                    <input type="text" id="company" placeholder="e.g. Google" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Location</label>
+                    <input type="text" id="location" placeholder="e.g. Bangalore / Remote" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Salary</label>
+                    <input type="text" id="salary" placeholder="e.g. ₹8 LPA">
+                </div>
+
+                <div class="input-box">
+                    <label>Job Type</label>
+                    <input type="text" id="jobType" placeholder="Internship / Full-Time">
+                </div>
+
+                <div class="input-box">
+                    <label>Description</label>
+                    <textarea id="description" placeholder="Describe the role..." required></textarea>
+                </div>
+
+                <div class="input-box">
+                    <label>Apply Link</label>
+                    <input type="text" id="applyLink" placeholder="https://...">
+                </div>
+
+                <button type="submit">Post Job</button>
+
+                <div class="back-link">
+                    <a href="dashboard.html">← Back to Dashboard</a>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+    <script src="js/post-job.js"></script>
+</body>
+</html>

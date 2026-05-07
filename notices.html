@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notice Board</title>
+    <link rel="stylesheet" href="CSS/notices.css">
+</head>
+<body>
+
+    <div class="notices-page">
+
+        <!-- Header -->
+        <div class="top-bar">
+            <h1>Notice Board</h1>
+
+            <div class="top-buttons">
+                <button onclick="window.location.href='post-notice.html'">
+                    Post Notice
+                </button>
+
+                <button onclick="window.location.href='dashboard.html'">
+                    Dashboard
+                </button>
+            </div>
+        </div>
+
+        <!-- Search -->
+        <div class="search-box">
+            <input 
+                type="text" 
+                id="searchInput"
+                placeholder="Search by title or category..."
+            >
+        </div>
+
+        <!-- Notices Grid -->
+        <div id="noticesContainer" class="notices-grid">
+            <p class="loading">Loading notices...</p>
+        </div>
+
+    </div>
+
+    <script src="js/notices.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Directory</title>
+    <link rel="stylesheet" href="CSS/alumni.css">
+</head>
+<body>
+
+    <div class="alumni-page">
+
+        <!-- Header -->
+        <div class="top-bar">
+            <h1>Alumni Directory</h1>
+            <button onclick="window.location.href='dashboard.html'">
+                Back to Dashboard
+            </button>
+        </div>
+
+        <!-- Search -->
+        <div class="search-box">
+            <input 
+                type="text" 
+                id="searchInput" 
+                placeholder="Search alumni by name, course, or college..."
+            >
+        </div>
+
+        <!-- Alumni Cards -->
+        <div id="alumniContainer" class="alumni-grid">
+            <p class="loading">Loading alumni...</p>
+        </div>
+
+    </div>
+
+    <script src="js/alumni.js"></script>
+</body>
+</html>

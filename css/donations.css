@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1b2436, #222e46, #0f2027);
+    color: white;
+    padding: 30px;
+}
+
+.donations-page {
+    max-width: 1450px;
+    margin: auto;
+}
+
+/* HEADER */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.top-bar h1 {
+    font-size: 34px;
+}
+
+.top-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.top-buttons button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #ffd700;
+    color: #222;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* SEARCH */
+.search-box {
+    margin-bottom: 30px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 12px;
+    border: none;
+    font-size: 16px;
+}
+
+/* GRID */
+.donations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 25px;
+}
+
+/* CARD */
+.donation-card {
+    background: white;
+    color: #222;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+    transition: 0.3s;
+    border-left: 8px solid #ffd700;
+}
+
+.donation-card:hover {
+    transform: translateY(-5px);
+}
+
+.donation-card h3 {
+    color: #222e46;
+    margin-bottom: 12px;
+}
+
+.donation-card p {
+    margin-bottom: 8px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.amount {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1b2436;
+    margin-bottom: 12px;
+}
+
+.loading {
+    text-align: center;
+    font-size: 18px;
+    grid-column: 1/-1;
+}
