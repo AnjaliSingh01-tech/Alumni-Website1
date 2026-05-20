@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     // LOAD EXISTING PROFILE DATA
     // =========================
     try {
-        const profileResponse = await fetch("http://localhost:5000/api/profile", {
+        const profileResponse = await fetch("http://alumni-backend-folder.onrender.com/api/profile", {
             method: "GET",
             headers: {
                 "Authorization": `Bearer ${token}`,
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         const bio = document.getElementById("bio").value.trim();
 
         try {
-            const response = await fetch("http://localhost:5000/api/profile/update", {
+            const response = await fetch("http:///api/profile/update", {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json",

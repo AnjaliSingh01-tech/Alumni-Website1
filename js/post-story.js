@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const linkedin = document.getElementById("linkedin").value.trim();
 
         try {
-            const response = await fetch("http://localhost:5000/api/success-stories/post", {
+            const response = await fetch("http://alumni-backend-folder.onrender.com/api/success-stories/post", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

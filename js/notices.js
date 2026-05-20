@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // FETCH NOTICES
     try {
-        const response = await fetch("http://localhost:5000/api/notices");
+        const response = await fetch("http://alumni-backend-folder.onrender.com/api/notices");
 
         const data = await response.json();
 

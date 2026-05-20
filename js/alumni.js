@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // FETCH ALUMNI
     try {
-        const response = await fetch("http://localhost:5000/api/alumni", {
+        const response = await fetch("http:///api/alumni", {
             method: "GET",
             headers: {
                 "Authorization": `Bearer ${token}`,

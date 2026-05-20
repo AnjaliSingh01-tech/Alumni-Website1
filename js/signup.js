@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!valid) return;
 
         try {
-            const response = await fetch("http://localhost:5000/api/auth/signup", {
+            const response = await fetch("http://alumni-backend-folder.onrender.com/api/auth/signup", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

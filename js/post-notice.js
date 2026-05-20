@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const message = document.getElementById("message").value.trim();
 
         try {
-            const response = await fetch("http://localhost:5000/api/notices/post", {
+            const response = await fetch("http://alumni-backend-folder.onrender.com/api/notices/post", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

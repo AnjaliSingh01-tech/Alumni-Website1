@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     try {
         // Fetch profile
-        const response = await fetch("http://localhost:5000/api/profile", {
+        const response = await fetch("http://alumni-backend-folder.onrender.com/api/profile", {
             method: "GET",
             headers: {
                 "Authorization": `Bearer ${token}`,

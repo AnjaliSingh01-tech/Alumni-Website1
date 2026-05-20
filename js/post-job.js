@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const apply_link = document.getElementById("applyLink").value.trim();
 
         try {
-            const response = await fetch("http://localhost:5000/api/jobs/post", {
+            const response = await fetch("http://alumni-backend-folder.onrender.com/api/jobs/post", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

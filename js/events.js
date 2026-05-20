@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // FETCH EVENTS
     try {
-        const response = await fetch("http://localhost:5000/api/events", {
+        const response = await fetch("http://alumni-backend-folder.onrender.com/api/events", {
             method: "GET",
             headers: {
                 "Authorization": `Bearer ${token}`,
